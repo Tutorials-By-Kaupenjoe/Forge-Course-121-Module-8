@@ -5,6 +5,7 @@ import net.kaupenjoe.mccourse.block.ModBlocks;
 import net.kaupenjoe.mccourse.entity.ModEntities;
 import net.kaupenjoe.mccourse.entity.client.CapybaraRenderer;
 import net.kaupenjoe.mccourse.entity.client.GiraffeRenderer;
+import net.kaupenjoe.mccourse.entity.client.TomahawkProjectileRenderer;
 import net.kaupenjoe.mccourse.item.ModCreativeModeTabs;
 import net.kaupenjoe.mccourse.item.ModItems;
 import net.minecraft.client.renderer.entity.EntityRenderers;
@@ -78,6 +79,8 @@ public class MCCourseMod {
         public static void onClientSetup(FMLClientSetupEvent event) {
             EntityRenderers.register(ModEntities.CAPYBARA.get(), CapybaraRenderer::new);
             EntityRenderers.register(ModEntities.GIRAFFE.get(), GiraffeRenderer::new);
+
+            EntityRenderers.register(ModEntities.TOMAHAWK.get(), TomahawkProjectileRenderer::new);
         }
     }
 }

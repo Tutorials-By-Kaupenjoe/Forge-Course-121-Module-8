@@ -4,6 +4,8 @@
   "item.mccourse.chainsaw": "Chainsaw",
   "item.mccourse.onion": "Onion",
   "item.mccourse.aurora_ashes": "Aurora Ashes",
+  "item.mccourse.tomahawk": "Tomahawk",
+
 
   "item.mccourse.capybara_spawn_egg": "Capybara Spawn Egg",
   "item.mccourse.giraffe_spawn_egg": "Giraffe Spawn Egg",
@@ -42,5 +44,6 @@
   "creativetab.azurite_items": "Azurite Items",
   "creativetab.azurite_blocks": "Azurite Blocks",
 
-  "entity.mccourse.giraffe": "Giraffe"
+  "entity.mccourse.giraffe": "Giraffe",
+  "entity.mccourse.tomahawk": "Tomahawk"
 }

@@ -27,6 +27,7 @@ public class ModCreativeModeTabs {
 
                         output.accept(ModItems.AURORA_ASHES.get());
 
+                        output.accept(ModItems.TOMAHAWK.get());
 
                         output.accept(ModItems.CAPYBARA_SPAWN_EGG.get());
                         output.accept(ModItems.GIRAFFE_SPAWN_EGG.get());

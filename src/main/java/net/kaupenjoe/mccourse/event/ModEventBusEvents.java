@@ -5,6 +5,7 @@ import net.kaupenjoe.mccourse.entity.ModEntities;
 import net.kaupenjoe.mccourse.entity.client.CapybaraModel;
 import net.kaupenjoe.mccourse.entity.client.GiraffeModel;
 import net.kaupenjoe.mccourse.entity.client.ModModelLayers;
+import net.kaupenjoe.mccourse.entity.client.TomahawkProjectileModel;
 import net.kaupenjoe.mccourse.entity.custom.CapybaraEntity;
 import net.kaupenjoe.mccourse.entity.custom.GiraffeEntity;
 import net.minecraft.world.entity.SpawnPlacementTypes;
@@ -22,6 +23,8 @@ public class ModEventBusEvents {
     public static void registerLayers(EntityRenderersEvent.RegisterLayerDefinitions event) {
         event.registerLayerDefinition(ModModelLayers.CAPYBARA, CapybaraModel::createBodyLayer);
         event.registerLayerDefinition(ModModelLayers.GIRAFFE, GiraffeModel::createBodyLayer);
+
+        event.registerLayerDefinition(ModModelLayers.TOMAHAWK, TomahawkProjectileModel::createBodyLayer);
     }
 
     @SubscribeEvent
