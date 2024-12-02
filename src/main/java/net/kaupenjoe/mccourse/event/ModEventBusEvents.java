@@ -22,6 +22,7 @@ public class ModEventBusEvents {
         event.registerLayerDefinition(ModModelLayers.CAPYBARA, CapybaraModel::createBodyLayer);
         event.registerLayerDefinition(ModModelLayers.GIRAFFE, GiraffeModel::createBodyLayer);
         event.registerLayerDefinition(ModModelLayers.WARTURTLE, WarturtleModel::createBodyLayer);
+        event.registerLayerDefinition(ModModelLayers.WARTURTLE_ARMOR, WarturtleModel::createBodyLayer);
 
         event.registerLayerDefinition(ModModelLayers.TOMAHAWK, TomahawkProjectileModel::createBodyLayer);
     }

@@ -26,6 +26,12 @@ public class ModItemModelProvider extends ItemModelProvider {
         basicItem(ModItems.ONION.get());
         basicItem(ModItems.AURORA_ASHES.get());
 
+        basicItem(ModItems.IRON_WARTURTLE_ARMOR.get());
+        basicItem(ModItems.GOLD_WARTURTLE_ARMOR.get());
+        basicItem(ModItems.DIAMOND_WARTURTLE_ARMOR.get());
+        basicItem(ModItems.NETHERITE_WARTURTLE_ARMOR.get());
+        basicItem(ModItems.AZURITE_WARTURTLE_ARMOR.get());
+
         buttonItem(ModBlocks.AZURITE_BUTTON, ModBlocks.AZURITE_BLOCK);
         fenceItem(ModBlocks.AZURITE_FENCE, ModBlocks.AZURITE_BLOCK);
         wallItem(ModBlocks.AZURITE_WALL, ModBlocks.AZURITE_BLOCK);

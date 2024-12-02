@@ -29,6 +29,12 @@ public class ModCreativeModeTabs {
 
                         output.accept(ModItems.TOMAHAWK.get());
 
+                        output.accept(ModItems.IRON_WARTURTLE_ARMOR.get());
+                        output.accept(ModItems.GOLD_WARTURTLE_ARMOR.get());
+                        output.accept(ModItems.DIAMOND_WARTURTLE_ARMOR.get());
+                        output.accept(ModItems.NETHERITE_WARTURTLE_ARMOR.get());
+                        output.accept(ModItems.AZURITE_WARTURTLE_ARMOR.get());
+
                         output.accept(ModItems.CAPYBARA_SPAWN_EGG.get());
                         output.accept(ModItems.GIRAFFE_SPAWN_EGG.get());
                         output.accept(ModItems.WARTURTLE_SPAWN_EGG.get());

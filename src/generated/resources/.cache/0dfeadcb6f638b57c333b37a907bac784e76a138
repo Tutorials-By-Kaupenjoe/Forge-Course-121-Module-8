@@ -1,13 +1,18 @@
-// 1.21.1	2024-12-02T17:37:33.697184	Item Models: mccourse
+// 1.21.1	2024-12-02T19:54:45.8946534	Item Models: mccourse
 1ce777d01800de4f89188a30f319cab2b5fbf262 assets/mccourse/models/item/aurora_ashes.json
 df3ca36915ce05a651f008eaa893eb1327e22921 assets/mccourse/models/item/azurite.json
 59aa0947d83e099a5aa3ea66af98ad0056ddbcb1 assets/mccourse/models/item/azurite_button.json
 0080259f9b2a3aae6f17c3be48d4b95c01621cdc assets/mccourse/models/item/azurite_door.json
 e683de56780ac19ea4359871d6d2daac95560999 assets/mccourse/models/item/azurite_fence.json
 1a7bdd49edb411ae3c9efae6d2a92ba93723242d assets/mccourse/models/item/azurite_wall.json
+4a879d49b9ffff02c19a6ce2398d61b9b0dc74e9 assets/mccourse/models/item/azurite_warturtle_armor.json
 63ec6c618a3a23eab4cab9c52d7d3250de9b516e assets/mccourse/models/item/capybara_spawn_egg.json
 f2aeca2040ea829b8b6878ebe3a168fcb74381d2 assets/mccourse/models/item/chainsaw.json
+231182ca1e88107b93e3518ab487c7ef7aa59a08 assets/mccourse/models/item/diamond_warturtle_armor.json
 63ec6c618a3a23eab4cab9c52d7d3250de9b516e assets/mccourse/models/item/giraffe_spawn_egg.json
+16c90f02e9721520f4ad9003a3f19f01b4254f25 assets/mccourse/models/item/gold_warturtle_armor.json
+dcfb19e7486d47112a72f2c4cde9a283ab850c1c assets/mccourse/models/item/iron_warturtle_armor.json
+623eaecc8ba07b78b08659dd1b1e6e410a66a102 assets/mccourse/models/item/netherite_warturtle_armor.json
 a7d5feb86bed77eaacdb1842113cbf06cd21ab3a assets/mccourse/models/item/onion.json
 57a81765c0f4b3dbbda0ae3694508d88e52b6568 assets/mccourse/models/item/raw_azurite.json
 63ec6c618a3a23eab4cab9c52d7d3250de9b516e assets/mccourse/models/item/warturtle_spawn_egg.json

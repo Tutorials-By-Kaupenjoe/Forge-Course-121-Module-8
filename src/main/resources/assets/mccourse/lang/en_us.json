@@ -6,10 +6,15 @@
   "item.mccourse.aurora_ashes": "Aurora Ashes",
   "item.mccourse.tomahawk": "Tomahawk",
 
-
   "item.mccourse.capybara_spawn_egg": "Capybara Spawn Egg",
   "item.mccourse.giraffe_spawn_egg": "Giraffe Spawn Egg",
   "item.mccourse.warturtle_spawn_egg": "Warturtle Spawn Egg",
+
+  "item.mccourse.iron_warturtle_armor": "Iron Warturtle Armor",
+  "item.mccourse.gold_warturtle_armor": "Gold Warturtle Armor",
+  "item.mccourse.diamond_warturtle_armor": "Diamond Warturtle Armor",
+  "item.mccourse.netherite_warturtle_armor": "Netherite Warturtle Armor",
+  "item.mccourse.azurite_warturtle_armor": "Azurite Warturtle Armor",
 
 
   "block.mccourse.azurite_block": "Block of Azurite",

@@ -1,6 +1,7 @@
 package net.kaupenjoe.mccourse.screen.custom;
 
 import net.kaupenjoe.mccourse.entity.custom.WarturtleEntity;
+import net.kaupenjoe.mccourse.item.custom.WarturtleArmorItem;
 import net.kaupenjoe.mccourse.screen.ModMenuTypes;
 import net.minecraft.network.FriendlyByteBuf;
 import net.minecraft.world.Container;
@@ -35,7 +36,13 @@ public class WarturtleMenu extends AbstractContainerMenu {
         this.warturtle = warturtleEntity;
         warturtleContainer.startOpen(inventory.player);
 
-        this.addSlot(new Slot(warturtleContainer, 0, 8, 63));  // Armor Slot
+        // Armor Slot
+        this.addSlot(new Slot(warturtleContainer, 0, 8, 63) {
+            @Override
+            public boolean mayPlace(ItemStack pStack) {
+                return pStack.getItem() instanceof WarturtleArmorItem;
+            }
+        });
         this.addSlot(new Slot(warturtleContainer, 1, 44, 63)); // Dye Slot
 
         // Chest Slot Tier 1
