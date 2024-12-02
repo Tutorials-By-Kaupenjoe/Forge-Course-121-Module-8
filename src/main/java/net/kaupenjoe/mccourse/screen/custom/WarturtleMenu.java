@@ -12,6 +12,8 @@ import net.minecraft.world.inventory.AbstractContainerMenu;
 import net.minecraft.world.inventory.Slot;
 import net.minecraft.world.item.ItemStack;
 import net.minecraft.world.item.Items;
+import net.minecraft.world.level.block.Block;
+import net.minecraft.world.level.block.WoolCarpetBlock;
 
 import java.util.List;
 import java.util.UUID;
@@ -43,7 +45,18 @@ public class WarturtleMenu extends AbstractContainerMenu {
                 return pStack.getItem() instanceof WarturtleArmorItem;
             }
         });
-        this.addSlot(new Slot(warturtleContainer, 1, 44, 63)); // Dye Slot
+        // Dye Slot
+        this.addSlot(new Slot(warturtleContainer, 1, 44, 63) {
+            @Override
+            public boolean mayPlace(ItemStack pStack) {
+                return warturtleEntity.hasArmorOn() && Block.byItem(pStack.getItem()) instanceof WoolCarpetBlock;
+            }
+
+            @Override
+            public int getMaxStackSize() {
+                return 1;
+            }
+        });
 
         // Chest Slot Tier 1
         this.addSlot(new Slot(warturtleContainer, 2, 72, 27) {
