@@ -9,6 +9,7 @@
 
   "item.mccourse.capybara_spawn_egg": "Capybara Spawn Egg",
   "item.mccourse.giraffe_spawn_egg": "Giraffe Spawn Egg",
+  "item.mccourse.warturtle_spawn_egg": "Warturtle Spawn Egg",
 
 
   "block.mccourse.azurite_block": "Block of Azurite",
@@ -45,5 +46,6 @@
   "creativetab.azurite_blocks": "Azurite Blocks",
 
   "entity.mccourse.giraffe": "Giraffe",
-  "entity.mccourse.tomahawk": "Tomahawk"
+  "entity.mccourse.tomahawk": "Tomahawk",
+  "entity.mccourse.warturtle": "Warturtle"
 }
