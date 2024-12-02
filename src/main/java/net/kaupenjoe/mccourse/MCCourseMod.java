@@ -9,6 +9,9 @@ import net.kaupenjoe.mccourse.entity.client.TomahawkProjectileRenderer;
 import net.kaupenjoe.mccourse.entity.client.WarturtleRenderer;
 import net.kaupenjoe.mccourse.item.ModCreativeModeTabs;
 import net.kaupenjoe.mccourse.item.ModItems;
+import net.kaupenjoe.mccourse.screen.ModMenuTypes;
+import net.kaupenjoe.mccourse.screen.custom.WarturtleScreen;
+import net.minecraft.client.gui.screens.MenuScreens;
 import net.minecraft.client.renderer.entity.EntityRenderers;
 import net.minecraft.world.item.CreativeModeTab;
 import net.minecraft.world.item.CreativeModeTabs;
@@ -32,7 +35,7 @@ public class MCCourseMod {
     // Define mod id in a common place for everything to reference
     public static final String MOD_ID = "mccourse";
     // Directly reference a slf4j logger
-    private static final Logger LOGGER = LogUtils.getLogger();
+    public static final Logger LOGGER = LogUtils.getLogger();
 
     // Very important comment
     public MCCourseMod() {
@@ -46,6 +49,7 @@ public class MCCourseMod {
         ModBlocks.register(modEventBus);
 
         ModEntities.register(modEventBus);
+        ModMenuTypes.register(modEventBus);
 
         // Register ourselves for server and other game events we are interested in
         MinecraftForge.EVENT_BUS.register(this);
@@ -83,6 +87,9 @@ public class MCCourseMod {
             EntityRenderers.register(ModEntities.WARTURTLE.get(), WarturtleRenderer::new);
 
             EntityRenderers.register(ModEntities.TOMAHAWK.get(), TomahawkProjectileRenderer::new);
+
+
+            MenuScreens.register(ModMenuTypes.WARTURTLE_MENU.get(), WarturtleScreen::new);
         }
     }
 }

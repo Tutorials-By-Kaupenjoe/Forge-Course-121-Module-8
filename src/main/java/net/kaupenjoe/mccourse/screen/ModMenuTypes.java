@@ -1,0 +1,29 @@
+package net.kaupenjoe.mccourse.screen;
+
+import net.kaupenjoe.mccourse.MCCourseMod;
+import net.kaupenjoe.mccourse.screen.custom.WarturtleMenu;
+import net.minecraft.core.registries.Registries;
+import net.minecraft.world.inventory.AbstractContainerMenu;
+import net.minecraft.world.inventory.MenuType;
+import net.minecraftforge.common.extensions.IForgeMenuType;
+import net.minecraftforge.eventbus.api.IEventBus;
+import net.minecraftforge.network.IContainerFactory;
+import net.minecraftforge.registries.DeferredRegister;
+import net.minecraftforge.registries.RegistryObject;
+
+public class ModMenuTypes {
+    public static final DeferredRegister<MenuType<?>> MENUS =
+            DeferredRegister.create(Registries.MENU, MCCourseMod.MOD_ID);
+
+    public static final RegistryObject<MenuType<WarturtleMenu>> WARTURTLE_MENU =
+            registerMenuType("warturtle_menu", WarturtleMenu::create);
+
+
+    private static <T extends AbstractContainerMenu> RegistryObject<MenuType<T>> registerMenuType(String name, IContainerFactory<T> factory) {
+        return MENUS.register(name, () -> IForgeMenuType.create(factory));
+    }
+
+    public static void register(IEventBus eventBus) {
+        MENUS.register(eventBus);
+    }
+}
