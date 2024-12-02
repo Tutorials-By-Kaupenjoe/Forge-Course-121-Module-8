@@ -6,6 +6,7 @@
   "item.mccourse.aurora_ashes": "Aurora Ashes",
 
   "item.mccourse.capybara_spawn_egg": "Capybara Spawn Egg",
+  "item.mccourse.giraffe_spawn_egg": "Giraffe Spawn Egg",
 
 
   "block.mccourse.azurite_block": "Block of Azurite",
@@ -39,5 +40,7 @@
   "tooltip.mccourse.onion.tooltip.1": "Tastes Great, for an Onion!",
 
   "creativetab.azurite_items": "Azurite Items",
-  "creativetab.azurite_blocks": "Azurite Blocks"
+  "creativetab.azurite_blocks": "Azurite Blocks",
+
+  "entity.mccourse.giraffe": "Giraffe"
 }
